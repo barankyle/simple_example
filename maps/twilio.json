@@ -11,7 +11,7 @@
       "POST": {
         "method": "POST",
         "route": {
-          "path": "/Accounts/{{ identifier }}/Messages"
+          "path": "/Accounts/{{ parameters.account_sid }}/Messages"
         },
         "model": {
           "key": "MessageSid",

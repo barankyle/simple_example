@@ -16,7 +16,6 @@
     "stripe": {
       "mapId": "** INSERT VALID MAP ID **",
       "callOptions": {
-        "identifier": "** INSERT VALID TWILIO ACCOUNT SID **",
         "parameters": {
           "stripe_signing_key": "** INSERT BASE64-ENCODED STRIPE HTTP BASIC CREDENTIALS **"
         }
@@ -25,9 +24,14 @@
     "twilio": {
       "mapId": "** INSERT VALID MAP ID **",
       "callOptions": {
-        "identifier": "** INSERT VALID TWILIO ACCOUNT SID **",
         "parameters": {
+          "account_sid": "** INSERT TWILIO ACCOUNT SID",
           "twilio_signing_key": "** INSERT BASE64-ENCODED TWILIO HTTP BASIC CREDENTIALS **"
+        },
+        "body": {
+          "From": "+17145823937",
+          "To": "+19498291286",
+          "Body": "Testing 123"
         }
       }
     }
