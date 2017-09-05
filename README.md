@@ -1,11 +1,13 @@
-# Simple example of integration to Amazon SQS, Stripe, and Twilio
+# Simple example of integration to GitHub, Stripe, and Twilio
 
 ## How to use:
-1. Add the 3 maps to BitScoop
+1. Add the 3 GitHub, Stripe, and Twilio API Maps to BitScoop
 
-Amazon SQS Quick Add:
+These example maps are stripped down to simplify their functionality and have test API keys already added to them.
 
-[![Add to BitScoop](https://assets.bitscoop.com/github/AddBitScoopXSmall.png)](https://bitscoop.com/maps/create?source=https://raw.githubusercontent.com/bitscooplabs/simple_example/master/maps/amazon_sqs.json)
+GitHub Quick Add:
+
+[![Add to BitScoop](https://assets.bitscoop.com/github/AddBitScoopXSmall.png)](https://bitscoop.com/maps/create?source=https://raw.githubusercontent.com/bitscooplabs/simple_example/master/maps/github.json)
 
 Twilio Quick Add:
 
@@ -15,16 +17,16 @@ Stripe Quick Add:
 
 [![Add to BitScoop](https://assets.bitscoop.com/github/AddBitScoopXSmall.png)](https://bitscoop.com/maps/create?source=https://raw.githubusercontent.com/bitscooplabs/simple_example/master/maps/stripe.json)
 
-   * Add your Amazon API key to the SQS map
-   * Add your stripe key to the stripe map
-   * Add your twilio key to the twilio map
-2. Install node dependancies
+2. Create a connection to the GitHub API on behalf of a user to get their data.
+
+~~~
+
+~~~
+
+3. Create a BitScoop API Key in and add the key string to the project to the config file.
+
+4. Run the app.
 ~~~
 yarn install
-~~~
-3. Create a BitScoop API Key in 
-    dd it to the config file
-5. Run the app.
-~~~
 node app.js
 ~~~
