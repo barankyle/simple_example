@@ -1,0 +1,12 @@
+{
+  "bitscoop": {
+    "apiKey": "** INSERT VALID API KEY ***"
+  },
+
+  "services": {
+    "placeholder": {
+      "mapId": "** INSERT VALID MAP ID **",
+      "callOptions": {}
+    }
+  }
+}
