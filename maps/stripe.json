@@ -3,15 +3,46 @@
   "name": "Stripe",
   "url": "https://api.stripe.com/v1",
   "headers": {
-    "Authorization": "Authorization: Basic c2tfdGVzdF9EREg3Q2NSM21lWlQ1c3RYYlF6ZlpxNXE6",
-    "Content-Type": "application/x-www-form-urlencoded"
+    "Authorization": "Basic {{ parameters.stripe_signing_key }}"
   },
   "endpoints": {
     "Charges": {
       "GET": {
         "method": "GET",
         "route": {
+          "data": "data",
           "path": "/charges"
+        },
+        "model": {
+          "key": "id",
+          "fields": {
+            "id": "string",
+            "object": "string",
+            "amount": "integer",
+            "amount_refunded": "integer",
+            "application": "string",
+            "balance_transaction": "string",
+            "captured": "boolean",
+            "created": "string",
+            "currency": "string",
+            "customer": "string",
+            "description": "string",
+            "metadata": {
+              "type": "object",
+              "fields": {
+                "order_id": "string"
+              }
+            },
+            "outcome": {
+              "type": "object",
+              "fields": {
+                "network_status": "string",
+                "seller_message": "string",
+                "type": "string"
+              }
+            },
+            "paid": "boolean"
+          }
         }
       }
     }

@@ -3,7 +3,7 @@
   "name": "Twilio",
   "url": "https://api.twilio.com/2010-04-01",
   "headers": {
-    "Authorization": "Authorization: Basic QUMwNDNiOGVhNWZjYTY2M2Q5MjljMGRiYjRmMmQ5MGIzZTo1N2JhOGIzMzQyY2Y5ODc1ZmEzMmVkM2Y2ODlhYjhkNQ==",
+    "Authorization": "Basic {{ parameters.twilio_signing_key }}",
     "Content-Type": "application/x-www-form-urlencoded"
   },
   "endpoints": {
